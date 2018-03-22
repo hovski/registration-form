@@ -11,34 +11,35 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <div>
-      <h1>Want to go to Mars?</h1>
+  <section class="contact max-length gutter">
+    <div class="max-length">
+      <h1 class="pad-t">Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     <form>
       <fieldset>
-        <legend>Personal details</legend>
+        <legend class="italic">Personal details</legend>
       </fieldset>
         <div class="grid">
-          <div class="unit">
+          <div class="unit push xs-1 s-1 m-1 l-1-2 pad-r">
             <label for="name">Name</label>
             <input id="name" name="name" required>
           </div>
-          <div class="unit">
-            <label for="email">Your email</label>
-            <input id="email" type="email" name="email" required>
-          </div>
-          <div class="unit">
+          <div class="unit push xs-1 s-1 m-1 l-1-2 pad-l">
             <label for="age">Age</label>
           <input id="age" type="number" name="age" required>
           </div>
-          <div class="unit">
+          <div class="unit push xs-1 s-1 m-1 l-1-2 pad-r">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="unit push xs-1 s-1 m-1 l-1-2 pad-l">
             <label for="physical fitness">Physical fitness</label>
-          <select id="physical fitness" name="physical fitness">
-            <option>- Super-human</option>
-            <option>- Fit as a fiddle</option>
-            <option>- Not terribly strong</option>
-          </select>
+            <select id="physical fitness" name="physical fitness">
+              <option>- Super-human</option>
+              <option>- Fit as a fiddle</option>
+              <option>- Not terribly strong</option>
+              <option>- A little couch-potato-y</option>
+            </select>
           </div>
         </div>
         <div class="push">
@@ -46,14 +47,14 @@
           <textarea id="address" name="message" required></textarea>
         </div>
         <fieldset>
-          <legend>Misson statement</legend>
+          <legend class="italic">Misson statement</legend>
         </fieldset>
         <div class="push">
           <label for="question">Why do you want to go to Mars?</label>
           <textarea id="question" name="message" required></textarea>
         </div>
-        <div>
-          <button class="#" type="submit">REgister for the trip!</button>
+        <div class="pad-b">
+          <button class="#" type="submit">Register for the trip!</button>
         </div>
       </form>
     </div>
